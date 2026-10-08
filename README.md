@@ -1,5 +1,4 @@
-# Saint Leo Alumni Impact Map — Refined Build
+# Saint Leo Alumni Map — Premium Concept Build
+This complete GitHub Pages folder closely follows the supplied concept: institutional masthead, impact statistics, dark global map, clustered alumni markers, filters, selected-profile action card, featured alumni strip, and consent-first join flow.
 
-This is a complete GitHub Pages folder, not a patch. It includes the full site, accessible labelled markers, search and industry filtering, profile panels, an opt-in/email-authorization dialog, responsive styling, `.nojekyll`, and OpenStreetMap tiles with attribution.
-
-All alumni shown are fictional demonstration records.
+Important: the package uses a custom text treatment rather than the registered university logo. Replace the placeholder mark only with an institutionally approved logo asset. All profile records and metrics in this prototype are illustrative.
