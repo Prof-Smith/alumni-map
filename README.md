@@ -13,3 +13,5 @@ Open `index.html` in a browser. Internet access is required for the map tiles, L
 Use Microsoft Forms for intake, SharePoint Lists for the profile and consent ledger, Power Automate for verification/approval, and a separately hosted front end for the map. Store an immutable reference to the authorization email rather than copying unnecessary email content into the public dataset.
 
 All names and records in this prototype are fictional demonstration data.
+
+Deployment refresh.
