@@ -5,7 +5,10 @@ const alumni=[
 {name:'Sofia Martinez',year:'2014',city:'Madrid, Spain',industry:'Education',role:'International Programs Director',employer:'Global Learning Alliance',lat:40.416,lng:-3.704,initials:'SM'},
 {name:'Liam O’Connor',year:'2010',city:'Sydney, Australia',industry:'Operations',role:'Operations Director',employer:'Pacific Logistics',lat:-33.868,lng:151.209,initials:'LO'},
 {name:'Avery Brooks',year:'2020',city:'Tampa, Florida',industry:'Finance',role:'Commercial Banking Associate',employer:'Bay Financial Group',lat:27.951,lng:-82.457,initials:'AB'}];
-const map=L.map('map',{zoomControl:false}).setView([25,-15],2);L.control.zoom({position:'bottomright'}).addTo(map);L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap © CARTO',maxZoom:19}).addTo(map);
+const map=L.map('map',{zoomControl:false}).setView([25,-15],2);L.control.zoom({position:'bottomright'}).addTo(map);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
 const goldIcon=L.divIcon({className:'',html:'<div style="width:18px;height:18px;background:#f5bd32;border:3px solid #fff;border-radius:50%;box-shadow:0 2px 10px #0008"></div>',iconSize:[18,18]});
 const profile=document.getElementById('profile');function show(a){profile.innerHTML=`<div class="person"><div class="avatar">${a.initials}</div><p class="eyebrow">AUTHORIZED ALUMNI PROFILE</p><h2>${a.name} ’${a.year.slice(-2)}</h2><p class="location">${a.city}</p><h4>${a.role}</h4><p>${a.employer}</p><span class="pill">${a.industry}</span><span class="pill">Open to connect</span><a class="linkedin" href="#" onclick="alert('Demo only: a verified LinkedIn URL would open here.');return false">View LinkedIn profile ↗</a><div class="consent"><b>Consent verified</b><br>Profile publication authorized by the alumnus. City-level location only.</div></div>`}
 alumni.forEach(a=>L.marker([a.lat,a.lng],{icon:goldIcon}).addTo(map).bindTooltip(`${a.name} · ${a.industry}`).on('click',()=>show(a)));

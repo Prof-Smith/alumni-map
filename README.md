@@ -14,4 +14,7 @@ Use Microsoft Forms for intake, SharePoint Lists for the profile and consent led
 
 All names and records in this prototype are fictional demonstration data.
 
-Deployment refresh.
+## Version 1.1 update
+- Replaced the CARTO basemap with the standard OpenStreetMap HTTPS tile endpoint.
+- Removed the CARTO API-key watermark issue.
+- Added a restrained visual filter so alumni markers remain prominent.
